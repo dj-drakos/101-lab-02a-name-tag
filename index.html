@@ -4,20 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is a name tag</title>
+    <title>Welcome to the party</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>when looking up</header>
-    <section class="side-bar"><p class="side-bar">10...  9...  8... 7... 6... 5... 4... 3... 2... 1</p>
+    <header>nice to meet you</header>
+    <section class="side-bar"><p class="side-bar">Time to meet and greet new friends and enemies</p>
     </section>
-     <main class="name-tag">
+    <div>  
+         <label for="name-input">Your name:<input id="name-input"></label>
+         <label for="pronoun-input">Your pronouns:<input id="pronoun-input"></label>
+    </div> 
+    <div>   
+         <button class="submit" id="submit-button">Submit</button>
+    </div> 
+    <div id="name-change-count">(You've used 0 name tags)</div>
+     <main class="name-tag" id="name-tag-main">
+
          <strong class="name-tag">hello</strong> 
          <span class="name-tag">my name is</span>
-         <em class="name-tag">Katherine Johnson</em>
+         <span id="input-display">
+         <span class="name" id="name-display">Katherine Johnson</span>
+         <span class="pronoun" id="pronoun-display">she/her</span>
+        </span>
         
      </main>
-    <footer>is looking down</footer>        
-
+     <div class="name-tag-options"> 
+        <div>
+            <label>choose your tag color:</label>
+        </div>
+        <div>
+        <button class="pink" id="pink-button">pink</button>
+        <button class="red" id="red-button">red</button>
+        <button class="orange" id="orange-button">orange</button>
+        <button class="yellow" id="yellow-button">yellow</button>
+        <button class="green" id="green-button">green</button>
+        </div>
+    </div>
+    <div class="name-tag-options"> 
+        <div>
+            <label>choose your handwriting:</label>
+        </div>
+        <div>
+        <button class="brush" id="brush-button">brush</button>
+        <button class="typewriter" id="typewriter-button">typewriter</button>
+        <button class="cute" id="cute-button">cute</button>
+        <button class="professional" id="professional-button">professional</button>
+        <button class="elegant" id="elegant-button">elegant</button>
+        </div>
+    </div>
+    <footer>join the party
+    </footer>        
+    <script type="module" src="app.js"></script>
 </body>
     </html>
